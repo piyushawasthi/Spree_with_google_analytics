@@ -1,0 +1,157 @@
+digraph Spree {
+rankdir = "LR";
+ranksep = "0.5";
+nodesep = "0.4";
+pad = "0.4,0.4";
+margin = "0,0";
+concentrate = "true";
+labelloc = "t";
+fontsize = "13";
+fontname = "Arial Bold";
+node[ shape  =  "Mrecord" , fontsize  =  "10" , fontname  =  "Arial" , margin  =  "0.07,0.05" , penwidth  =  "1.0"];
+edge[ fontname  =  "Arial" , fontsize  =  "7" , dir  =  "both" , arrowsize  =  "0.9" , penwidth  =  "1.0" , labelangle  =  "32" , labeldistance  =  "1.8"];
+label = "Spree domain model\n\n";
+"m_Spree::Activator" [label = <<table border="0" align="center" cellspacing="0.5" cellpadding="0" width="134">
+  <tr><td align="center" valign="bottom" width="130"><font face="Arial Bold" point-size="11">Spree::Activator</font></td></tr>
+</table>
+|
+<table border="0" align="left" cellspacing="2" cellpadding="0" width="134">
+  <tr><td align="left" width="130" port="advertise">advertise <font face="Arial Italic" color="grey60">boolean</font></td></tr>
+  <tr><td align="left" width="130" port="code">code <font face="Arial Italic" color="grey60">string</font></td></tr>
+  <tr><td align="left" width="130" port="description">description <font face="Arial Italic" color="grey60">string</font></td></tr>
+  <tr><td align="left" width="130" port="event_name">event_name <font face="Arial Italic" color="grey60">string</font></td></tr>
+  <tr><td align="left" width="130" port="expires_at">expires_at <font face="Arial Italic" color="grey60">datetime</font></td></tr>
+  <tr><td align="left" width="130" port="match_policy">match_policy <font face="Arial Italic" color="grey60">string</font></td></tr>
+  <tr><td align="left" width="130" port="name">name <font face="Arial Italic" color="grey60">string</font></td></tr>
+  <tr><td align="left" width="130" port="path">path <font face="Arial Italic" color="grey60">string</font></td></tr>
+  <tr><td align="left" width="130" port="starts_at">starts_at <font face="Arial Italic" color="grey60">datetime</font></td></tr>
+  <tr><td align="left" width="130" port="usage_limit">usage_limit <font face="Arial Italic" color="grey60">integer</font></td></tr>
+</table>
+>];
+"m_Spree::Calculator" [label = <<table border="0" align="center" cellspacing="0.5" cellpadding="0" width="134">
+  <tr><td align="center" valign="bottom" width="130"><font face="Arial Bold" point-size="11">Spree::Calculator</font></td></tr>
+</table>
+|
+<table border="0" align="left" cellspacing="2" cellpadding="0" width="134">
+  <tr><td align="left" width="130" port="calculable_type">calculable_type <font face="Arial Italic" color="grey60">string</font></td></tr>
+</table>
+>];
+"m_Spree::OptionValue" [label = <<table border="0" align="center" cellspacing="0.5" cellpadding="0" width="134">
+  <tr><td align="center" valign="bottom" width="130"><font face="Arial Bold" point-size="11">Spree::OptionValue</font></td></tr>
+</table>
+|
+<table border="0" align="left" cellspacing="2" cellpadding="0" width="134">
+  <tr><td align="left" width="130" port="name">name <font face="Arial Italic" color="grey60">string ∗</font></td></tr>
+  <tr><td align="left" width="130" port="option_type_id">option_type_id <font face="Arial Italic" color="grey60">integer</font></td></tr>
+  <tr><td align="left" width="130" port="position">position <font face="Arial Italic" color="grey60">integer</font></td></tr>
+  <tr><td align="left" width="130" port="presentation">presentation <font face="Arial Italic" color="grey60">string ∗</font></td></tr>
+</table>
+>];
+"m_Spree::Order" [label = <<table border="0" align="center" cellspacing="0.5" cellpadding="0" width="134">
+  <tr><td align="center" valign="bottom" width="130"><font face="Arial Bold" point-size="11">Spree::Order</font></td></tr>
+</table>
+|
+<table border="0" align="left" cellspacing="2" cellpadding="0" width="134">
+  <tr><td align="left" width="130" port="adjustment_total">adjustment_total <font face="Arial Italic" color="grey60">decimal (10,2) ∗</font></td></tr>
+  <tr><td align="left" width="130" port="bill_address_id">bill_address_id <font face="Arial Italic" color="grey60">integer</font></td></tr>
+  <tr><td align="left" width="130" port="channel">channel <font face="Arial Italic" color="grey60">string</font></td></tr>
+  <tr><td align="left" width="130" port="completed_at">completed_at <font face="Arial Italic" color="grey60">datetime</font></td></tr>
+  <tr><td align="left" width="130" port="currency">currency <font face="Arial Italic" color="grey60">string</font></td></tr>
+  <tr><td align="left" width="130" port="email">email <font face="Arial Italic" color="grey60">string ∗</font></td></tr>
+  <tr><td align="left" width="130" port="item_total">item_total <font face="Arial Italic" color="grey60">decimal (10,2) ∗</font></td></tr>
+  <tr><td align="left" width="130" port="last_ip_address">last_ip_address <font face="Arial Italic" color="grey60">string</font></td></tr>
+  <tr><td align="left" width="130" port="number">number <font face="Arial Italic" color="grey60">string (32)</font></td></tr>
+  <tr><td align="left" width="130" port="payment_state">payment_state <font face="Arial Italic" color="grey60">string</font></td></tr>
+  <tr><td align="left" width="130" port="payment_total">payment_total <font face="Arial Italic" color="grey60">decimal (10,2)</font></td></tr>
+  <tr><td align="left" width="130" port="ship_address_id">ship_address_id <font face="Arial Italic" color="grey60">integer</font></td></tr>
+  <tr><td align="left" width="130" port="shipment_state">shipment_state <font face="Arial Italic" color="grey60">string</font></td></tr>
+  <tr><td align="left" width="130" port="shipping_method_id">shipping_method_id <font face="Arial Italic" color="grey60">integer</font></td></tr>
+  <tr><td align="left" width="130" port="special_instructions">special_instructions <font face="Arial Italic" color="grey60">text</font></td></tr>
+  <tr><td align="left" width="130" port="state">state <font face="Arial Italic" color="grey60">string</font></td></tr>
+  <tr><td align="left" width="130" port="tax_total">tax_total <font face="Arial Italic" color="grey60">decimal (10,2) ∗</font></td></tr>
+  <tr><td align="left" width="130" port="total">total <font face="Arial Italic" color="grey60">decimal (10,2) ∗</font></td></tr>
+</table>
+>];
+"m_Spree::PaymentMethod" [label = <<table border="0" align="center" cellspacing="0.5" cellpadding="0" width="134">
+  <tr><td align="center" valign="bottom" width="130"><font face="Arial Bold" point-size="11">Spree::PaymentMethod</font></td></tr>
+</table>
+|
+<table border="0" align="left" cellspacing="2" cellpadding="0" width="134">
+  <tr><td align="left" width="130" port="active">active <font face="Arial Italic" color="grey60">boolean</font></td></tr>
+  <tr><td align="left" width="130" port="auto_capture">auto_capture <font face="Arial Italic" color="grey60">boolean</font></td></tr>
+  <tr><td align="left" width="130" port="deleted_at">deleted_at <font face="Arial Italic" color="grey60">datetime</font></td></tr>
+  <tr><td align="left" width="130" port="description">description <font face="Arial Italic" color="grey60">text</font></td></tr>
+  <tr><td align="left" width="130" port="display_on">display_on <font face="Arial Italic" color="grey60">string</font></td></tr>
+  <tr><td align="left" width="130" port="environment">environment <font face="Arial Italic" color="grey60">string</font></td></tr>
+  <tr><td align="left" width="130" port="name">name <font face="Arial Italic" color="grey60">string ∗</font></td></tr>
+</table>
+>];
+"m_Spree::Preference" [label = <<table border="0" align="center" cellspacing="0.5" cellpadding="0" width="134">
+  <tr><td align="center" valign="bottom" width="130"><font face="Arial Bold" point-size="11">Spree::Preference</font></td></tr>
+</table>
+|
+<table border="0" align="left" cellspacing="2" cellpadding="0" width="134">
+  <tr><td align="left" width="130" port="key">key <font face="Arial Italic" color="grey60">string ∗</font></td></tr>
+  <tr><td align="left" width="130" port="value">value <font face="Arial Italic" color="grey60">text</font></td></tr>
+  <tr><td align="left" width="130" port="value_type">value_type <font face="Arial Italic" color="grey60">string ∗</font></td></tr>
+</table>
+>];
+"m_Spree::PromotionAction" [label = <<table border="0" align="center" cellspacing="0.5" cellpadding="0" width="134">
+  <tr><td align="center" valign="bottom" width="130"><font face="Arial Bold" point-size="11">Spree::PromotionAction</font></td></tr>
+</table>
+|
+<table border="0" align="left" cellspacing="2" cellpadding="0" width="134">
+  <tr><td align="left" width="130" port="position">position <font face="Arial Italic" color="grey60">integer</font></td></tr>
+</table>
+>];
+"m_Spree::PromotionRule" [label = <<table border="0" align="center" cellspacing="0.5" cellpadding="0" width="134">
+  <tr><td align="center" valign="bottom" width="130"><font face="Arial Bold" point-size="11">Spree::PromotionRule</font></td></tr>
+</table>
+|
+<table border="0" align="left" cellspacing="2" cellpadding="0" width="134">
+  <tr><td align="left" width="130" port="product_group_id">product_group_id <font face="Arial Italic" color="grey60">integer</font></td></tr>
+  <tr><td align="left" width="130" port="user_id">user_id <font face="Arial Italic" color="grey60">integer</font></td></tr>
+</table>
+>];
+"m_Spree::Role" [label = <<table border="0" align="center" cellspacing="0.5" cellpadding="0" width="134">
+  <tr><td align="center" valign="bottom" width="130"><font face="Arial Bold" point-size="11">Spree::Role</font></td></tr>
+</table>
+|
+<table border="0" align="left" cellspacing="2" cellpadding="0" width="134">
+  <tr><td align="left" width="130" port="name">name <font face="Arial Italic" color="grey60">string</font></td></tr>
+</table>
+>];
+"m_Spree::User" [label = <<table border="0" align="center" cellspacing="0.5" cellpadding="0" width="134">
+  <tr><td align="center" valign="bottom" width="130"><font face="Arial Bold" point-size="11">Spree::User</font></td></tr>
+</table>
+|
+<table border="0" align="left" cellspacing="2" cellpadding="0" width="134">
+  <tr><td align="left" width="130" port="authentication_token">authentication_token <font face="Arial Italic" color="grey60">string</font></td></tr>
+  <tr><td align="left" width="130" port="bill_address_id">bill_address_id <font face="Arial Italic" color="grey60">integer</font></td></tr>
+  <tr><td align="left" width="130" port="current_sign_in_at">current_sign_in_at <font face="Arial Italic" color="grey60">datetime</font></td></tr>
+  <tr><td align="left" width="130" port="current_sign_in_ip">current_sign_in_ip <font face="Arial Italic" color="grey60">string</font></td></tr>
+  <tr><td align="left" width="130" port="email">email <font face="Arial Italic" color="grey60">string ∗</font></td></tr>
+  <tr><td align="left" width="130" port="encrypted_password">encrypted_password <font face="Arial Italic" color="grey60">string (128)</font></td></tr>
+  <tr><td align="left" width="130" port="failed_attempts">failed_attempts <font face="Arial Italic" color="grey60">integer ∗</font></td></tr>
+  <tr><td align="left" width="130" port="last_request_at">last_request_at <font face="Arial Italic" color="grey60">datetime</font></td></tr>
+  <tr><td align="left" width="130" port="last_sign_in_at">last_sign_in_at <font face="Arial Italic" color="grey60">datetime</font></td></tr>
+  <tr><td align="left" width="130" port="last_sign_in_ip">last_sign_in_ip <font face="Arial Italic" color="grey60">string</font></td></tr>
+  <tr><td align="left" width="130" port="locked_at">locked_at <font face="Arial Italic" color="grey60">datetime</font></td></tr>
+  <tr><td align="left" width="130" port="login">login <font face="Arial Italic" color="grey60">string</font></td></tr>
+  <tr><td align="left" width="130" port="password_salt">password_salt <font face="Arial Italic" color="grey60">string (128)</font></td></tr>
+  <tr><td align="left" width="130" port="perishable_token">perishable_token <font face="Arial Italic" color="grey60">string</font></td></tr>
+  <tr><td align="left" width="130" port="persistence_token">persistence_token <font face="Arial Italic" color="grey60">string</font></td></tr>
+  <tr><td align="left" width="130" port="remember_created_at">remember_created_at <font face="Arial Italic" color="grey60">datetime</font></td></tr>
+  <tr><td align="left" width="130" port="remember_token">remember_token <font face="Arial Italic" color="grey60">string</font></td></tr>
+  <tr><td align="left" width="130" port="reset_password_sent_at">reset_password_sent_at <font face="Arial Italic" color="grey60">datetime</font></td></tr>
+  <tr><td align="left" width="130" port="reset_password_token">reset_password_token <font face="Arial Italic" color="grey60">string</font></td></tr>
+  <tr><td align="left" width="130" port="ship_address_id">ship_address_id <font face="Arial Italic" color="grey60">integer</font></td></tr>
+  <tr><td align="left" width="130" port="sign_in_count">sign_in_count <font face="Arial Italic" color="grey60">integer ∗</font></td></tr>
+  <tr><td align="left" width="130" port="spree_api_key">spree_api_key <font face="Arial Italic" color="grey60">string (48)</font></td></tr>
+  <tr><td align="left" width="130" port="unlock_token">unlock_token <font face="Arial Italic" color="grey60">string</font></td></tr>
+</table>
+>];
+  "m_Spree::User" -> "m_Spree::Order" [arrowhead = "normal", arrowtail = "none", weight = "3"];
+  "m_Spree::User" -> "m_Spree::Order" [arrowhead = "normal", arrowtail = "none", weight = "1"];
+  "m_Spree::Role" -> "m_Spree::User" [arrowhead = "normal", arrowtail = "normal", weight = "2"];
+}
