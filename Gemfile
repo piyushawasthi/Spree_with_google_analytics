@@ -65,7 +65,7 @@ gem 'spree_auth_devise', github: 'spree/spree_auth_devise', branch: '2-1-stable'
 gem 'gmaps4rails', '~> 2.1.2'
 
 # Spree Bootstrap frontend stable 2.1
-#gem 'spree_bootstrap_frontend', github: '200Creative/spree_bootstrap_frontend', branch: '2-1-stable'
+gem 'spree_bootstrap_frontend', github: '200Creative/spree_bootstrap_frontend', branch: '2-1-stable'
 
 # Promotion on Taxonomy
 #gem 'spree_taxon_promotion_rule', github: 'Hates/spree_taxon_promotion_rule'
@@ -78,4 +78,13 @@ gem 'rails_12factor', group: :production
 
 # PayPal Integration
 gem 'spree_paypal_express', :github => "radar/better_spree_paypal_express", :branch => "2-1-stable"
+
+# Print Inovice
+gem 'spree_print_invoice' , :git => 'git://github.com/spree/spree_print_invoice.git', :branch => "2-1-stable"
+
+# Address book.
+gem "spree_address_book", :git => "git://github.com/romul/spree_address_book.git", :branch => '2-1-stable'
+
+# Gem for review
+gem 'spree_reviews', :git => 'git://github.com/spree/spree_reviews.git', :branch => '2-1-stable'
 
