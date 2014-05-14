@@ -88,3 +88,9 @@ gem "spree_address_book", :git => "git://github.com/romul/spree_address_book.git
 # Gem for review
 gem 'spree_reviews', :git => 'git://github.com/spree/spree_reviews.git', :branch => '2-1-stable'
 
+# Spree Social Integration all
+gem "spree_social_products", :git => "git://github.com/spree/spree_social_products.git" , :branch => '2-1-stable'
+
+# Social Integration configure
+gem "spree_social", :git => "git://github.com/spree/spree_social.git", :branch => '2-1-stable'
+
