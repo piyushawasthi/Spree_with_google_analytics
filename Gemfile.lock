@@ -93,6 +93,14 @@ GIT
       spree_frontend (~> 2.1.0)
 
 GIT
+  remote: git://github.com/spree/spree_gateway.git
+  revision: 5b2d05b2331718fe59274c9231793d082bb83d69
+  branch: 2-1-stable
+  specs:
+    spree_gateway (2.1.1)
+      spree_core (~> 2.1)
+
+GIT
   remote: git://github.com/spree/spree_print_invoice.git
   revision: fa84354805b67ad9a3a7537e78d18df766408d90
   branch: 2-1-stable
@@ -370,6 +378,8 @@ GEM
     select2-rails (3.4.9)
       sass-rails
       thor (~> 0.14)
+    spree_showcase (0.7)
+      spree_core (>= 2)
     sprockets (2.11.0)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -439,9 +449,11 @@ DEPENDENCIES
   spree_address_book!
   spree_auth_devise!
   spree_bootstrap_frontend!
+  spree_gateway!
   spree_paypal_express!
   spree_print_invoice!
   spree_reviews!
+  spree_showcase
   spree_social!
   spree_social_products!
   sqlite3

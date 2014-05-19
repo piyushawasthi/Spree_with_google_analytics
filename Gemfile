@@ -2,7 +2,8 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.4'
-#gem 'ruby', '2.1.1p76'
+#gem 'ruby', '2.1.1'
+
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 
@@ -58,6 +59,9 @@ gem 'spree', github: 'spree/spree', branch: '2-1-stable'
 # Spree stable 2.1 Authentication
 gem 'spree_auth_devise', github: 'spree/spree_auth_devise', branch: '2-1-stable'
 
+# spree gateway
+gem 'spree_gateway', github: 'spree/spree_gateway', branch: '2-1-stable'
+
 # Spree Bootstrap stable 2.1
 #gem 'spree_bootstrap', github: 'jdutil/spree_bootstrap'  , :branch => "2-1-stable" 
 
@@ -74,7 +78,9 @@ gem 'spree_bootstrap_frontend', github: '200Creative/spree_bootstrap_frontend', 
 #gem 'newrelic_rpm'
 
 # Deploy on Heroku
-gem 'rails_12factor', group: :production
+group :production do
+  gem 'rails_12factor'
+end
 
 # PayPal Integration
 gem 'spree_paypal_express', :github => "radar/better_spree_paypal_express", :branch => "2-1-stable"
@@ -93,4 +99,7 @@ gem "spree_social_products", :git => "git://github.com/spree/spree_social_produc
 
 # Social Integration configure
 gem "spree_social", :git => "git://github.com/spree/spree_social.git", :branch => '2-1-stable'
+
+# Spree Frontend Show case configure by Admin
+gem 'spree_showcase'
 

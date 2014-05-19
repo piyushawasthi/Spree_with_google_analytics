@@ -12,4 +12,5 @@
  *= require store/spree_paypal_express
  *= require store/spree_reviews
  *= require store/spree_social_products
+ *= require store/spree_showcase
 */

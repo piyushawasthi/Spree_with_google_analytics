@@ -14,3 +14,4 @@
 //= require store/spree_paypal_express
 //= require jquery.rating
 //= require store/spree_social_products
+//= require jquery.flexslider
